@@ -1,0 +1,392 @@
+*{
+          list-style:none;
+          padding: 20;
+          margin: 20;
+          box-sizing: border-box;
+}
+
+body{
+          background: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+          background-repeat:no-repeat;
+          background-size:230vh 222vh;
+          background-clip: content-box;
+}
+
+header{
+
+          background-color: #3F4E4F;
+          height: 100px;
+          border-radius: 10px;
+          border-style:solid;
+          border-color: rgba(0, 0, 0, 0.332);
+          
+}
+
+.container{
+          display: flex;
+          justify-content: space-between;
+}
+
+header h1{
+          line-height: 35px;
+          font-size: 40px;
+          padding-left: 40px;
+          color: white;
+          text-align: center;
+          transition: all 500ms ease;
+}
+
+header h1:hover{
+          color: rgb(65,107,119);
+          padding-bottom: 5px;
+          cursor: pointer;
+          border-bottom:1.5px rgb(65,107,119) solid;
+          
+}
+
+#btn-menu{
+          visibility: hidden;
+}
+.Btn-menu{
+          display: flex;
+          
+         padding-left:50px;
+          padding-right: 30px;
+
+}
+
+.Btn-menu img{
+          border-radius:10px;
+}
+
+.Btn-menu label{
+          color: rgb(255, 255, 255);
+          font-size: 29px;
+          line-height: 88px;
+          cursor: pointer;
+}
+.Btn-menu label:hover{
+          color: rgb(65,107,119);
+}
+
+
+#menu{
+          display: flex;
+          float: right;
+          }
+          #menu a{
+                    margin-right: 15px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 25px;
+                    padding-bottom: 3px;
+                    color: white;
+                    line-height: 20px;
+                    text-decoration: none;
+                    transition: all 501ms ease;
+
+          }
+          #menu a:hover{
+                    color: rgb(90, 140, 154);
+                    border-bottom: solid rgb(65,107,119) 2px;
+               }
+
+               .submenu{
+                    display: none;
+                    position:absolute;
+                    padding-left: 0px;
+                    background: #3f4e4f9e;
+                    border-left: 3px solid rgba(0, 0, 0, 0.313);
+                    border-bottom: 3px solid rgba(0, 0, 0, 0.313);
+                    border-right: 3px solid rgba(0, 0, 0, 0.313);
+                    transition: all 500ms ease;
+               }
+               #menu li:hover .submenu{
+                    display: block;
+                    transition: all 500ms ease;
+
+               }
+          .container-menu{
+                    left: 0;top:0; 
+                    position:absolute;
+                    opacity: 0;
+                    width: 100%;
+                    margin-top: 108px;
+                    margin-left: 10px;
+                    height: 100vh;
+                    max-width: 220px;
+                    visibility: hidden;
+                   transition: all 700ms ease;
+                   align-self: center;
+                 
+          }
+
+
+          .cont-menu{
+               background-color: #3F4E4F;
+               width: 100%;
+                    max-width: 220px;
+                    height: 100%;   
+                    max-height: 650px;                 
+                    position: relative;
+                    border-radius: 5px;
+                    padding: 20px;
+                    border:3px solid rgba(0, 0, 0, 0.313);
+                   border-radius: 5px;
+          }
+          .cont-menu label{
+                    float:left;
+                    top: 2px;
+                    cursor: pointer;
+          } 
+          .cont-menu a{
+                    color: white;
+                    font-size: 24px;
+                    padding-left: 0px;
+                    text-decoration: none;
+                    padding: 20px;
+                    margin-top: 90px;
+                    transition: all 200ms ease;
+          }
+          .cont-menu a:hover{
+                    border-left: 2px rgb(59, 90, 99) solid;
+                    border-bottom: 2px rgb(59, 90, 99) solid;
+                    color: rgb(65,107,119);
+                    animation:forwards;
+          }
+          #btn-menu:checked~.container-menu{
+                    opacity: 1;
+                    visibility: visible;
+                   
+          }
+
+          .cont-menu label{
+                    color: white;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+          }
+     main{
+          display: block;          
+          justify-content: center;
+     }
+     main h1{
+          text-align: center;
+     }
+     .informacion-reytero{
+          display: flex;
+          flex-direction: column;
+          background:#3f4e4fa0;
+          margin-top: 50px;
+          width: auto;
+          max-width: 950px;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-left: 10px;
+          text-align: center;
+          margin: 0 auto;
+          height: auto;
+          border-radius: 9px;
+          border:solid rgba(0, 0, 0, 0.313);
+          transition: all 500ms ease;
+     }
+     .Info{
+          margin-right: 20px;
+          line-height: 20px;
+          height: auto;
+          transition: all 500ms ease;
+
+     }
+     .informacion-reytero h1{
+          color: rgb(255, 255, 255);
+          font-size: 45px;
+          transition: all 500ms ease;
+
+     }
+     .informacion-reytero h1:hover{
+          color: rgb(65,107,119);
+          text-decoration: underline;
+
+     }
+     .Info li{
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          padding-bottom: 10px;
+          text-decoration: underline;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          transition: all 500ms ease;
+
+     }
+
+     .Info li:hover{
+          color:  rgb(65,107,119);
+     }
+     
+     .Info a{
+          color: rgb(255, 255, 255);
+          transition: all 500ms ease;
+     }
+     .Info a:hover{
+          color:rgb(65,107,119);
+     }
+
+     .ubicacion{
+          display: none;
+          transition: all 500ms ease;
+     }
+     
+     .ubicacion iframe{
+          border-radius: 1pc;
+     }
+
+     .Info li:hover .ubicacion{
+          display: block;
+     }
+     hr{
+          width: 57%;
+     }
+
+     /* Cards */
+
+.streamers{
+          display: flex;
+          background-color: #3f4e4fae;
+          width: auto; 
+          max-width: 950px;
+          flex-direction: column;
+          margin: 0 auto;
+          border-radius: 20px;
+          border-style:solid;
+          border-color:rgba(0, 0, 0, 0.313);
+     } 
+
+.Streamers-favoritos{
+          display: flex;
+          justify-content: center;
+}
+.streamCards{
+         background:url("https://images.pexels.com/photos/3941855/pexels-photo-3941855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" );
+           background-repeat:no-repeat;
+          background-size: auto;
+          width: 230px;
+          margin-left: 10px;
+          margin-right: 10px;
+          display: inline-block;
+          margin-bottom: 30px;
+          text-align: center;
+          border-style:solid;
+          border-color: rgba(0, 0, 0, 0.313);
+          transition:all 800ms ease;
+          padding-top: 10px;
+}
+.streamCards img{
+          max-width: 176px;
+          max-height: 176px;
+          border-radius: 10px;
+          border-color: rgba(0, 0, 0, 0.313);
+          transition:all 800ms ease;
+
+}
+.streamCards a{
+          transition:all 800ms ease;
+}
+
+.Vector{
+     color: rgb(255, 255, 255);
+     font-size:1.5rem;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+}
+
+.nexxuz{
+     color: rgb(255, 255, 255);
+     font-size:1.5rem;
+     font-family:'Franklin Gothic Medium';
+     text-decoration:none;
+}
+
+.raptor{
+     color:rgb(255, 255, 255);
+     font-size:1.5rem;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+}
+
+.nexxuz:hover{
+          color: red;
+}
+.raptor:hover{
+          color: orange;
+}
+   .Vector:hover{  color: #810000;
+}
+.streamers h1{
+     color: rgb(255, 255, 255);
+     font-size: 45px;
+     text-decoration: underline;
+     transition: all 450ms ease;
+}
+.streamers h1:hover{
+     color:rgb(65,107,119);
+}
+.streamCards:hover{
+     transform:translateY(-15px);
+}
+
+/* Cardgames */
+
+.Juegos{
+     display: flex;
+     flex-direction: column;
+     color: white;
+     font-size: 25px;
+     background-color: #3f4e4fae;
+     width:auto ;
+     margin: 0 auto;
+     border-radius:10px;
+     border-style:solid;
+     border-color:rgba(0, 0, 0, 0.313);
+     max-width: 950px;
+}
+
+.Juegos-favoritos{
+     display: flex;
+     justify-content: center;
+     padding: 30px;
+}
+.cardGames{
+     display: inline-block;
+     text-align: center;
+     background:url("https://images.pexels.com/photos/3941855/pexels-photo-3941855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" );
+     padding: 20px;
+     width: 230px;
+     margin-right: 20px;
+     border-style:solid;
+     transition: all 650ms ease;
+     border-color:rgba(0, 0, 0, 0.313);
+}
+.cardGames img{
+     border-radius: 10px;
+}
+
+.cardGames:hover{
+     transform: translateY(-15px);
+}
+
+.Valorant{
+     color: white;
+     font-size: 1.5rem;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+}
+.Warzone{
+     color: white;
+     font-size:1.5rem;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration:none;
+}
+.Gta{
+     color: white;
+     font-size:1.5rem;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+}
