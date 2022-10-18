@@ -12,9 +12,10 @@
           <header>
             
                     <div class="container">
-                              <div class="Btn-menu">
+                              <div class="Btn-menu">                                                             
+                                 <h1 onclick="alert('Soy un Titulo :D')" class="titulo1">Sobre <span id="Reytero">Reytero</span></h1>
+
                                         <label for="btn-menu" class="icon-align-justify"></label>                                       
-                                                             <h1 onclick="alert('Soy un Titulo :D')">Sobre Reytero</h1>
 </div>                                       
 
                               <div class="lista1">
@@ -49,10 +50,13 @@
               <p> <a href="#">Youtube</a></p>
                <br>
               <p> <a href="#">Twitter</a></p>
+              <br>
             </nav>
          </div>
       </div>
          <div class="informacion-reytero">
+            <h1 class="titulo2">Pagina Sobre Reytero</h1>
+            <hr class="hr1">
          <h1>informacion de reytero</h1>
                <ul class="Info">        
                   
@@ -64,7 +68,7 @@
    <br>
     <li><p><a href="#">⬇ Ciudad ⬇</a></p>
       <ul class="ubicacion">
-         <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251160.10005804547!2d-71.56849458297378!3d10.391636664873905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89c76a94216b2b%3A0x248a8285349a4935!2sCabimas%2C%20Zulia!5e0!3m2!1ses!2sve!4v1665636059372!5m2!1ses!2sve" width="450" height="450" style="border:0;" allowfullscreen="on" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+         <li><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251160.10005804547!2d-71.56849458297378!3d10.391636664873905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89c76a94216b2b%3A0x248a8285349a4935!2sCabimas%2C%20Zulia!5e0!3m2!1ses!2sve!4v1665636059372!5m2!1ses!2sve" width="450" height="450" style="border:0;" allowfullscreen="on" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></li>
       
       <li>Cabimas</li>
    </ul>
@@ -92,7 +96,7 @@
             <h1>⬇ Juegos Favoritos ⬇</h1>
             <div class="Juegos-favoritos">
                <a href="https://playvalorant.com/en-us/"><div class="cardGames">
-                  <img src="https://images.cults3d.com/4QqRV9kLYYEuw9ur_X3yjQl1sjk=/516x516/https://files.cults3d.com/uploaders/15024335/illustration-file/a86d53e4-2bd9-4a8f-9550-986686c3131a/gi0mAjIh_400x400.png" width="176px" height="176px">
+                  <img src="gi0mAjIh_400x400.png"176px" height="176px">
                      <h4><p><a class="Valorant" href="#">valorant</a></p></h4>
                </div></a>
                <a href="https://www.callofduty.com/es/warzone">
@@ -107,6 +111,76 @@
                </div></a>
             </div>
          </div>
+
+
       </main>
+
+
+<div class="infoUser1">      
+   <h1>⬇ Informacion del Usuario ⬇</h1>
+
+   <div class="infoUser2">     
+
+      <form action="https://formspree.io/f/mdojdvqo" id="Info-User">
+         <input type="text" id="Nombre-User" name="Nombre:" placeholder="Tu nombre:" required>
+         <br>
+         <input type="text" id="Edad-User" name="Edad:" placeholder="Tu edad:" required>
+         <br>
+            <button type="submit" onclick="MensajeInfo()">Mostrar Informacion</button> 
+
+      </form>
+
+      <script>
+
+            function MensajeInfo(){
+
+               var nombreUser = document.getElementById("Nombre-User").value
+               var edadUser = document.getElementById("Edad-User").value
+
+               document.write("Tu Nombre:"+nombreUser);
+               document.write('<br>')
+               document.write("Tu Edad:"+edadUser)
+
+            }
+
+            /*  document.write('<br>')
+               document.write('<hr>')
+               var Nombre;
+               Nombre = prompt("Ingresa tu nombre");
+
+               if(Nombre == "Reynier" ){
+                  alert("Bienvenido Reytero ^_^")
+               }
+
+               else {
+                  alert("Bienvenido" + " " + "Usuario")
+               }
+               document.write("Nombre:"+Nombre)
+               
+              
+               document.write('<br>')
+               document.write('<hr>')
+                var dias;
+               dias = ["Lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+               var contadorDias;
+               contadorDias = dias.length-1;
+
+               for(i=0;i<=contadorDias;i++){
+                  document.write(dias[i] + '<br>')
+               } 
+
+               var edad;
+               edad = prompt("Tu Edad:")
+               document.write("Tu Edad:"+edad);
+               document.write('<hr>');
+
+               document.write('<br>')
+ */
+
+            
+         
+      </script>
+</div>
+      </div>
 </body>
 </html>
