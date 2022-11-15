@@ -1,20 +1,17 @@
 *{
      list-style:none;
-     padding: 20;
-     margin: 20;
-     box-sizing: border-box;
+     box-sizing: content-box;
 }
 
 body{
-     background: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+     background:url("https://cdn.pixabay.com/photo/2015/03/30/17/37/texture-699695_960_720.jpg");
      background-repeat:no-repeat;
-     background-size:1900px 3400px;
-     background-clip: content-box;
+      background-size:160%;     background-origin:padding-box;
 }
 
 header{
 
-     background-color: #3F4E4F;
+     background-color: rgb(63, 73, 73);
      height: 100px;
      border-radius: 10px;
      border-style:solid;
@@ -24,39 +21,45 @@ header{
 
 .container{
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      flex-direction: row-reverse;
 }
 
 
 header h1{
-     line-height: 35px;
-     font-size: 40px;
-     padding-right: 40px;
+     display: flex;
+     flex-direction: column;
+     padding-right: 95px;
+     padding-top: 15px;
+     margin: 0 auto;
+     font-size: 30px;
      color:#B8E8FC;
+     max-width: 50px;
      text-align: center;
-     transition: all 500ms ease;
+     transition: all 200ms ease;
 }
 
 
 header h1:hover{
-     color: rgb(65,107,119);
-     padding-bottom: 5px;
+     color: rgb(200, 255, 212);
      cursor: pointer;
-     border-bottom:1.5px rgb(65,107,119) solid;
+     margin: 5px;
+     border-left: 1.5px solid rgb(65,107,119);
+     border-bottom: 1.5px solid rgb(65,107,119);
+
      
 }
 
 #Reytero{
-     color: #C8FFD4;
-}
+    color:  rgb(200, 255, 212);}
 
 #btn-menu{
      visibility: hidden;
 }
 .Btn-menu{
      display: flex;
-
+     flex-direction: row-reverse;
+margin-right: 60px;
 }
 
 .Btn-menu img{
@@ -64,15 +67,12 @@ header h1:hover{
 }
 
 .Btn-menu label{
-     color: rgb(255, 255, 255);
-     font-size: 29px;
-     line-height: 88px;
-     cursor: pointer;
-}
-.Btn-menu label:hover{
-     color: rgb(65,107,119);
+  cursor: pointer;
 }
 
+.xd{
+     margin-top: 20px;
+}
 
 #menu{
      display: flex;
@@ -80,8 +80,8 @@ header h1:hover{
      }
      #menu a{
                margin-right: 15px;
-               padding-left: 10px;
-               padding-right: 10px;
+               padding-left: 0px;
+               padding-right: 20px;               
                font-size: 25px;
                padding-bottom: 3px;
                color: white;
@@ -93,7 +93,7 @@ header h1:hover{
 
      }
      #menu a:hover{
-               color: rgb(90, 140, 154);
+               color: rgb(200, 255, 212);
                border-bottom: solid rgb(65,107,119) 2px;
                transition: all 600ms ease;
                transform: translateY(-20px);
@@ -102,48 +102,52 @@ header h1:hover{
           .submenu{
                display: none;
                position:absolute;
-               padding-left: 0px;
-               background: #3f4e4f9e;
-               border-left: 3px solid rgba(0, 0, 0, 0.313);
-               border-bottom: 3px solid rgba(0, 0, 0, 0.313);
-               border-right: 3px solid rgba(0, 0, 0, 0.313);
+               margin: 0px;
+               padding-left: 10px;
+               background-color: rgb(63, 73, 73);               
                transition: all 500ms ease;
+          
           }
+          .submenu a{
+               padding-right: 200px;
+          }
+
           #menu li:hover .submenu{
                display: block;
                transition: all 500ms ease;
 
           }
      .container-menu{
-               left: 0;top:0; 
+               right: 50px;top:0; 
                position:absolute;
                opacity: 0;
                width: 100%;
                margin-top: 108px;
                margin-left: 10px;
-               height: 100vh;
+               height: 100%;
                max-width: 220px;
                visibility: hidden;
               transition: all 700ms ease;
               align-self: center;
             
-     }
+     } 
 
 
      .cont-menu{
-          background-color: #3F4E4F;
+          background-color: rgb(63, 73, 73);
           width: 100%;
                max-width: 220px;
                height: 100%;   
                max-height: 650px;                 
                position: relative;
                border-radius: 5px;
+               justify-content: end;
                padding: 20px;
                border:3px solid rgba(0, 0, 0, 0.313);
               border-radius: 5px;
      }
      .cont-menu label{
-               float:left;
+               float:right;
                top: 2px;
                cursor: pointer;
      } 
@@ -157,7 +161,7 @@ header h1:hover{
                transition: all 200ms ease;
      }
      .cont-menu a:hover{
-               border-left: 2px rgb(59, 90, 99) solid;
+               border-left: 2px rgb(66, 82, 86) solid;
                border-bottom: 2px rgb(59, 90, 99) solid;
                color: rgb(65,107,119);
                animation:forwards;
@@ -183,7 +187,7 @@ main h1{
 .informacion-reytero{
      display: flex;
      flex-direction: column;
-     background:#3f4e4fa0;
+     background-color: rgba(63, 73, 73, 0.5);
      margin-top: 50px;
      width: auto;
      max-width: 950px;
@@ -268,7 +272,7 @@ hr{
 
 .streamers{
      display: flex;
-     background-color: #3f4e4fae;
+     background-color: rgba(63, 73, 73, 0.5);
      width: auto; 
      max-width: 950px;
      padding: 10px;
@@ -294,9 +298,9 @@ hr{
     width: auto;
      max-width: 230px;
      border-radius: 5px;
-
      display: inline-block;
      margin-bottom: 30px;
+     margin: 30px;
      text-align: center;
      border-style:solid;
      border-color: rgba(0, 0, 0, 0.313);
@@ -364,7 +368,7 @@ display: flex;
 flex-direction: column;
 color: white;
 font-size: 25px;
-background-color: #3f4e4fae;
+background-color: rgba(63, 73, 73, 0.5);
 width:auto ;
 padding:10px;
 margin: 0 auto;
@@ -386,7 +390,7 @@ background:url("https://images.pexels.com/photos/3941855/pexels-photo-3941855.jp
 padding: 20px;
 width: auto;
 max-width: 230px;
-margin-right: 20px;
+margin: 30px;
 border-style:solid;
 border-radius: 5px;
 transition: all 300ms ease;
@@ -465,8 +469,15 @@ text-decoration: none;
      font-size: 20px;
 }
 @media (max-width:750px){
+    
+     .container{
+          display: flex;
+          justify-content: center;
+          flex-direction: row-reverse;
+     }
+    
      .titulo1{
-          display: none;
+       display: none;
           color: #3F4E4F;
      }
      .titulo2{
