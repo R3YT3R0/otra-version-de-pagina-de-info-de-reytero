@@ -1,12 +1,12 @@
 *{
      list-style:none;
-     box-sizing: content-box;
+     box-sizing:border-box;
 }
 
 body{
      background:url("https://cdn.pixabay.com/photo/2015/03/30/17/37/texture-699695_960_720.jpg");
      background-repeat:no-repeat;
-      background-size:160%;     background-origin:padding-box;
+      background-size:300vh 400vh;     background-origin:padding-box;
 }
 
 header{
@@ -21,45 +21,35 @@ header{
 
 .container{
      display: flex;
-     justify-content: space-between;
-     flex-direction: row-reverse;
+     justify-content: space-evenly;
+     flex-direction: row;
 }
 
 
-header h1{
-     display: flex;
-     flex-direction: column;
-     padding-right: 95px;
-     padding-top: 15px;
-     margin: 0 auto;
-     font-size: 30px;
-     color:#B8E8FC;
-     max-width: 50px;
+.Titulo1{
+     color:rgb(200, 255, 212);
+     width: 150px;
+     line-height: 30px;
      text-align: center;
-     transition: all 200ms ease;
+     padding-top: 20px;
+     margin:0 auto;
+     transition: all .5s ease-in-out;
+}
+
+.Titulo1:hover{
+     color: #B8E8FC;
+     border-bottom: 3px solid #B8E8FC;
 }
 
 
-header h1:hover{
-     color: rgb(200, 255, 212);
-     cursor: pointer;
-     margin: 5px;
-     border-left: 1.5px solid rgb(65,107,119);
-     border-bottom: 1.5px solid rgb(65,107,119);
-
-     
-}
-
-#Reytero{
-    color:  rgb(200, 255, 212);}
 
 #btn-menu{
      visibility: hidden;
 }
 .Btn-menu{
      display: flex;
-     flex-direction: row-reverse;
-margin-right: 60px;
+margin-left: 20px;
+     flex-direction: row;
 }
 
 .Btn-menu img{
@@ -76,7 +66,11 @@ margin-right: 60px;
 
 #menu{
      display: flex;
-     float: right;
+     float: left;
+     }
+
+     #menu p{
+          text-align: center;
      }
      #menu a{
                margin-right: 15px;
@@ -84,7 +78,7 @@ margin-right: 60px;
                padding-right: 20px;               
                font-size: 25px;
                padding-bottom: 3px;
-               color: white;
+               color: rgb(200, 255, 212);
                line-height: 20px;
                text-decoration: none;
                transition: all 501ms ease;
@@ -93,8 +87,8 @@ margin-right: 60px;
 
      }
      #menu a:hover{
-               color: rgb(200, 255, 212);
-               border-bottom: solid rgb(65,107,119) 2px;
+               color: #B8E8FC;
+               border-bottom: solid #B8E8FC 2px;
                transition: all 600ms ease;
                transform: translateY(-20px);
           }
@@ -112,26 +106,27 @@ margin-right: 60px;
                padding-right: 200px;
           }
 
-          #menu li:hover .submenu{
+          submenu1:hover .submenu{
                display: block;
                transition: all 500ms ease;
 
           }
      .container-menu{
-               right: 50px;top:0; 
-               position:absolute;
                opacity: 0;
-               width: 100%;
-               margin-top: 108px;
-               margin-left: 10px;
-               height: 100%;
-               max-width: 220px;
                visibility: hidden;
-              transition: all 700ms ease;
-              align-self: center;
-            
      } 
 
+     .container-menu2{
+          left: 300px;top:0; 
+          position:relative;
+          opacity: 1;
+          width: 100%;
+          margin-left: 10px;
+          max-width: 220px;
+          visibility: visible;
+          transition: all 700ms ease;
+          align-self: center;
+          }
 
      .cont-menu{
           background-color: rgb(63, 73, 73);
@@ -141,13 +136,13 @@ margin-right: 60px;
                max-height: 650px;                 
                position: relative;
                border-radius: 5px;
-               justify-content: end;
-               padding: 20px;
+               float: left;
+               padding: 30px;
                border:3px solid rgba(0, 0, 0, 0.313);
               border-radius: 5px;
      }
      .cont-menu label{
-               float:right;
+               float:left;
                top: 2px;
                cursor: pointer;
      } 
@@ -166,38 +161,27 @@ margin-right: 60px;
                color: rgb(65,107,119);
                animation:forwards;
      }
-     #btn-menu:checked~.container-menu{
-               opacity: 1;
-               visibility: visible;
-              
-     }
+     
 
      .cont-menu label{
                color: white;
                font-size: 30px;
                margin-bottom: 20px;
      }
-main{
-     display: block;          
-     justify-content: center;
-}
-main h1{
-     text-align: center;
-}
+
 .informacion-reytero{
      display: flex;
      flex-direction: column;
      background-color: rgba(63, 73, 73, 0.5);
      margin-top: 50px;
-     width: auto;
-     max-width: 950px;
+     width: 840px;
      padding-left: 25px;
      padding-right: 25px;
      margin-left: 10px;
      text-align: center;
      margin: 0 auto;
      height: auto;
-     border-radius: 9px;
+     border-radius: 19px;
      border:solid rgba(0, 0, 0, 0.313);
      transition: all 500ms ease;
 }
@@ -209,16 +193,17 @@ main h1{
 
 }
 .informacion-reytero h1{
-     color: rgb(255, 255, 255);
+     color: rgb(200, 255, 212);
      font-size: 45px;
-     transition: all 500ms ease;
+     transition: all 555ms ease-in;
 
 }
 .titulo2{
      display: none;
 }
 .informacion-reytero h1:hover{
-     color: rgb(65,107,119);
+     color:#B8E8FC;
+     text-shadow: 0px 0px 5px black;
      text-decoration: underline;
 
 }
@@ -227,7 +212,7 @@ main h1{
      width: 100%;
 }
 .Info li{
-     color: rgb(255, 255, 255);
+     color: rgb(200, 255, 212);
      font-size: 20px;
      padding-bottom: 10px;
      text-decoration: underline;
@@ -237,7 +222,7 @@ main h1{
 }
 
 .Info li:hover{
-     color:  rgb(65,107,119);
+     color:  #B8E8FC;
 }
 
 .Info a{
@@ -250,19 +235,17 @@ main h1{
 
 .ubicacion{
      display: none;
-     transition: all 1500ms ease;
-     position:relative;
-     text-align: center;
+ 
 }
 
 .ubicacion iframe{
-     border-radius: 1pc;
+     border-radius: 2pc;
 }
 
-.Info li:hover .ubicacion{
+.ubicacion2{
      display: block;
-     transform: translateY(30px) translate3d(20px);
-
+     position:relative;
+     text-align: center;     
 }
 hr{
      width: 57%;
@@ -274,15 +257,29 @@ hr{
      display: flex;
      background-color: rgba(63, 73, 73, 0.5);
      width: auto; 
-     max-width: 950px;
      padding: 10px;
      flex-direction: column;
      margin: 0 auto;
      border-radius: 20px;
      border-style:solid;
+     max-width: 900px;
      text-align: center;
      border-color:rgba(0, 0, 0, 0.313);
 } 
+
+.Stream-tittle {
+     color: rgb(200, 255, 212);
+     font-size: 26px;
+     transition: all 555ms ease-in;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Stream-tittle:hover{
+     color: #B8E8FC;
+     text-shadow: 2px 2px 15px black;
+     text-decoration: underline;
+}
 
 .Streamers-favoritos{
      display: inline-block;
@@ -346,17 +343,11 @@ text-decoration: none;
 .raptor:hover{
      color: orange;
 }
+
 .Vector:hover{  color: #810000;
 }
-.streamers h1{
-color: rgb(255, 255, 255);
-font-size: 45px;
-text-decoration: underline;
-transition: all 450ms ease;
-}
-.streamers h1:hover{
-color:rgb(65,107,119);
-}
+
+
 .streamCards:hover{
 transform:translateY(-15px);
 }
@@ -364,25 +355,31 @@ transform:translateY(-15px);
 /* Cardgames */
 
 .Juegos{
-display: flex;
-flex-direction: column;
-color: white;
-font-size: 25px;
-background-color: rgba(63, 73, 73, 0.5);
-width:auto ;
-padding:10px;
-margin: 0 auto;
-border-radius:10px;
-border-style:solid;
-border-color:rgba(0, 0, 0, 0.313);
-max-width: 950px;
-}
+     display: flex;
+     background-color: rgba(63, 73, 73, 0.5);
+     width: auto; 
+     padding: 10px;
+     flex-direction: column;
+     margin: 0 auto;
+     border-radius: 20px;
+     border-style:solid;
+     max-width: 900px;
+     text-align: center;
+     border-color:rgba(0, 0, 0, 0.313);}
 
-.Juegos-favoritos{
-     display: inline-block;
-padding: 10px;
-text-align: center;
-}
+     .Juegos h1{
+          color: rgb(200, 255, 212);
+     font-size: 26px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          transition: all 555ms ease-in;
+     }
+
+     .Juegos h1:hover{
+          color: #B8E8FC;
+          text-shadow: 2px 2px 15px black;
+          text-decoration: underline;
+     }
+
 .cardGames{
 display: inline-block;
 text-align: center;
@@ -396,6 +393,7 @@ border-radius: 5px;
 transition: all 300ms ease;
 border-color:rgba(0, 0, 0, 0.313);
 }
+
 .cardGames img{
 border-radius: 10px;
 }
@@ -421,6 +419,7 @@ font-size:1.5rem;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-decoration:none;
 }
+
 .Warzone:hover{
      color: #3F4E4F;
 }
@@ -430,12 +429,10 @@ font-size:1.5rem;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-decoration: none;
 }
+
 .Gta:hover{
      color:rgb(71, 120, 29)
 }
-
-
-
 
 .infoUser1{
      display: flex;
@@ -452,6 +449,7 @@ text-decoration: none;
      max-width: 950px;
      
      }
+
      .infoUser1 h1{
           color:  white;
           font-size: 45px;
@@ -462,12 +460,14 @@ text-decoration: none;
      font-size: 30px;
      height: 140px;
 } 
+
 .infoUser2 input{
      width: 50%;
      
      text-align: center;
      font-size: 20px;
 }
+
 @media (max-width:750px){
     
      .container{
@@ -487,4 +487,23 @@ text-decoration: none;
           display: block;
           width: 100%;
      }
+}
+
+.main{
+     display: flex;
+     flex-direction: column;
+     width: auto;
+     margin: 0 auto;    
+      margin-right: 350px;
+
+     max-width: 950px;
+     text-align: center;
+}
+
+.cabimas{
+     display: none;
+}
+.cabimas2{
+     transition: all 5s ease-in-out;
+     display: block;
 }
