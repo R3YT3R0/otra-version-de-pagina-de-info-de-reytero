@@ -6,9 +6,9 @@
 body{
      background:url("https://cdn.pixabay.com/photo/2015/03/30/17/37/texture-699695_960_720.jpg");
      background-repeat:no-repeat;
-      background-size:300vh 400vh;     background-origin:padding-box;
+      background-size:300vh 400vh;    
+       background-origin:padding-box;
 }
-
 header{
 
      background-color: rgb(63, 73, 73);
