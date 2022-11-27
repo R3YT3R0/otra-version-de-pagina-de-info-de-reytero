@@ -15,12 +15,15 @@ document.getElementById("btn-menu").addEventListener("click", menuDesplegable)
         
                     function mapaDesplegable(){
                               var liCiudad = document.getElementById("Cabimas");
-
+                              var botonCiudad = document.getElementById("Ubicacion")
                               if(liCiudad.className == "cabimas"){
                                         liCiudad.className = "cabimas2"
+                                        botonCiudad.innerHTML = "⬆⬆⬆ Ciudad ⬆⬆⬆"
                               }
                               else{
                                         liCiudad.className = "cabimas"
+                                        botonCiudad.innerHTML = "⬇⬇⬇ Ciudad ⬇⬇⬇"
+
                               }
                     }
 
