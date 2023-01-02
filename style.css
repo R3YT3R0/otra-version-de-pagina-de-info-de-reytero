@@ -5,7 +5,7 @@
 
 body{
      background:url("https://cdn.pixabay.com/photo/2015/03/30/17/37/texture-699695_960_720.jpg");
-     background-repeat:no-repeat;
+     background-repeat:repeat;
       background-size:400vh 400vh;    
      box-sizing: content-box;
      }
@@ -453,10 +453,10 @@ text-decoration: none;
 
 @media (max-width:750px){
     
-    /*  .container{
+      .container{
           display: flex;
-          justify-content: center;
-          flex-direction: row-reverse;
+          justify-content: space-around;
+          flex-direction: row;
      }
     
      .titulo1{
@@ -469,7 +469,7 @@ text-decoration: none;
      .hr1{
           display: block;
           width: 100%;
-     } */
+     } 
 }
 
 .main{
@@ -490,3 +490,4 @@ text-decoration: none;
      transition: all 5s ease-in-out;
      display: block;
 }
+
