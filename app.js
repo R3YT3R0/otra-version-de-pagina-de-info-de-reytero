@@ -18,14 +18,11 @@ document.getElementById("btn-menu").addEventListener("click", menuDesplegable)
                               var botonCiudad = document.getElementById("Ubicacion")
                               if(liCiudad.className == "cabimas"){
                                         liCiudad.className = "cabimas2"
-                                        botonCiudad.innerHTML = "⬆⬆⬆ Ciudad ⬆⬆⬆"
+                                        botonCiudad.innerHTML = "⬆⬆Ciudad⬆⬆"
                               }
                               else{
                                         liCiudad.className = "cabimas"
-                                        botonCiudad.innerHTML = "⬇⬇⬇ Ciudad ⬇⬇⬇"
+                                        botonCiudad.innerHTML = "⬇⬇Ciudad⬇⬇"
 
                               }
                     }
-
-
-          
